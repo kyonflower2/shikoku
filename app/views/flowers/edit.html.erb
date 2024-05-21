@@ -1,0 +1,22 @@
+<%= form_for @flower do |f| %>
+    <%= f.text_field :name, :size => 30 %>
+    <%= f.text_area :about, :size => "30x2" %>
+    <%= f.select :feeling, 
+    [["A", "A"], 
+    ["B", "B"], 
+    ["C", "C"]], include_blank: "選択して下さい" %>
+    <%= f.select :category, 
+    [["アクティブ", "アクティブ"], 
+    ["自然", "自然"], 
+    ["グルメ", "グルメ"], 
+    ["ツアー", "ツアー"],
+    ["歴史", "歴史"]], include_blank: "選択して下さい" %>
+    <%= f.select :Prefecture, 
+    [["香川県", "香川県"], 
+    ["愛媛県", "愛媛県"], 
+    ["徳島県", "徳島県"], 
+    ["高知県", "高知県"]], include_blank: "選択して下さい" %>
+    <%= f.text_field :username, :size => 30 %>
+    <%= f.date_select :date, {discard: true} %>
+    <%= f.submit "編集する" %>
+  <% end %>
