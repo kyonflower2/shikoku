@@ -4,8 +4,10 @@
     ココノコ共有
   </div>
   <% if user_signed_in? %>
-    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "indexlogout" %>
+    <div class="indexlogoutsinki">
     <%= link_to "新規投稿へ", new_flower_path, {class: "indexsinki"} %>
+     <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "indexlogout" %>
+    </div>
   <% else %>
     <%= link_to "ログイン", new_user_session_path, {class: "indexlogin"} %>
 <% end %>
