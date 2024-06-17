@@ -1,0 +1,84 @@
+/***カーテンのように開くアニメーション***/
+.kekka3::before, .kekka3::after{
+    content: "";
+    position: fixed; /*固定表示*/
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background: #fffafa; /*劇のカーテン色*/
+    animation: curtainOpen 2s forwards;
+    animation-delay: 1s; /*遅延時間(遅延時間)*/
+    z-index: 999; /*最前面に*/
+  }
+  .kekka3::before{
+    left: 0;
+  }
+  .kekka3::after{
+    right: 0;
+  }
+  
+  @keyframes curtainOpen{
+    0%{
+      opacity: 1;
+      width: 50vw; /*閉じている状態*/
+    }
+    50%{
+      opacity: 1; /*半分までは不透明*/
+    }
+    100%{ 
+      opacity: 0; /*透明*/
+      width: 0; /*開く*/
+      visibility: hidden; /*非表示に*/
+    }
+  }
+  
+
+.kekka3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.kekka2{
+	width: 83vw;
+	height: 55vw;
+	object-fit: cover;
+	margin-top: 6vw;
+	position: relative;
+	z-index: 1;
+}
+
+.kekka{
+	position: absolute;
+	z-index: 3;
+	margin-top: 30vw;
+	font-size: 5vw;
+	padding: 1rem 2rem;
+    justify-content: center;
+    text-align: center;
+  	border: 6px double #000;
+	background-color: #ffffff94;
+}
+
+.sindansyosai{display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 2vw;
+    width: 16%;
+    height: 8%;
+    margin-left: 43%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    background: #fdeff2;
+    color: #606060;
+    transition: all 0.4s;
+    border: #606060 solid 1.5px;
+}
+.sindansyosai:hover {
+    color: #f6bfbc;
+}
+

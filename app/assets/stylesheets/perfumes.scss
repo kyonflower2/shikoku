@@ -1,3 +1,128 @@
 // Place all the styles related to the perfumes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.3rem;
+}
+a.btn--yellow {
+  color: #000;
+  background-color: #ffc1e0cf;
+  border-bottom: 3px solid #ffadd69f;
+}
+a.btn--yellow:hover {
+  margin-top: 3px;
+  color: #000;
+  background: #ffc1e0cf;
+  border-bottom: 3px solid #ffadd69f;
+}
+
+a.btn--yellow {
+	color: #606060;
+	font-size: 90%;
+	background-color: #ffc1e0cf;
+	border-bottom: 5px solid #ffadd69f;
+	text-align: center;
+	width: 20vw;
+  }
+  
+  a.btn--yellow:hover {
+	margin-top: 3px;
+	color: #606060;
+	background: #ffc1e0cf;
+	border-bottom: 2px solid #ffadd69f;
+	vertical-align: middle;
+	width: 20vx;
+  }
+
+  .p2 {
+	text-align: center;
+}
+
+.p{
+	background-image: url("login.jpg");
+	padding-top: 5%;
+	height: 100vh;
+	padding-top: 30vh;
+	color: #606060;
+}
+
+.p1{padding-bottom: 10vh;
+
+}
+
+h1{
+	text-align: center;
+
+}
+
+ a.p5{
+ 	width: 500px;
+}
+
+
+
+.p3 {
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 7px solid #FF77FF;
+	background: #ffffff;
+	color: #606060;
+}
+.p3:hover {
+    margin-top: 6px;
+	border-bottom: 1px solid #FF77FF;
+	color: #606060;
+}
+
+.p4 {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 120px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 7px solid #FF77FF;
+	background: #ffffff;
+	color: #606060;
+}
+.p4:hover {
+    margin-top: 6px;
+	border-bottom: 1px solid #FF77FF;
+	color: #606060;
+}
+
+.p34{
+	background-color:#fffafa ;
+}

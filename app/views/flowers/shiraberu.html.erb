@@ -1,10 +1,100 @@
-<%= link_to "高知", flowers_kouchi_path %>
-<%= link_to "愛媛", flowers_ehime_path %>
-<%= link_to "香川", flowers_kagawa_path %>
-<%= link_to "徳島", flowers_tokushima_path %>
+<div class=shiraberu2>
+    <%= image_tag 'takaya1.jpg', class: 'shiraberuphoto1' %>
+    <%= image_tag 'sakanoue1.jpg', class: 'shiraberuphoto2' %>
+    <%= image_tag 'chichibu3.jpg', class: 'shiraberuphoto3' %>
+    
+  <div class='shiraberu1'>
+    <div class='kenbetsu'>
+      〖県別〗
+    </div>
 
-<%= link_to "アクティブ", flowers_active_path %>
-<%= link_to "のんびり", flowers_nonbiri_path %>
-<%= link_to "グルメ", flowers_goumet_path %>
-<%= link_to "自然", flowers_nature_path %>
-<%= link_to "鑑賞", flowers_kansyo_path %>
+
+    <div class="ehimekagawa">
+      <%= link_to flowers_ehime_path do %>
+        <div class="ehime">
+          <div class="ken">
+            愛媛
+          </div>
+        </div>
+      <% end %>
+      <%= link_to flowers_kagawa_path do %>
+          <div class="kagawa">
+            <div class="ken">
+              香川
+            </div>
+          </div>
+      <% end %>
+    </div>
+    <br>
+  <div class="kouchitokushima">
+    <%= link_to flowers_kouchi_path do %>
+      <div class="kouchi">
+        <div class="ken">
+          高知
+        </div>
+      </div>
+    <% end %>
+    <%= link_to flowers_tokushima_path do %>
+        <div class="tokushima">
+          <div class="ken">
+            徳島
+          </div>
+        </div>
+    <% end %>
+    </div>
+  </div>
+</div>
+
+
+<%= image_tag 'karusuto5.jpg', class: 'shiraberuphoto4' %>
+<%= image_tag 'kumo1.jpg', class: 'shiraberuphoto5' %>
+<%= image_tag 'kouen1.jpg', class: 'shiraberuphoto6' %>
+
+
+<div class="shiraberu3">
+  <div class='categorybetsu'>
+    〖カテゴリー別〗
+  </div>
+
+
+  <div class='sanko'>
+      <%= link_to flowers_active_path do %>
+        <div class="active">
+          <div class="ken2">
+            アクティブ
+          </div>
+        </div>
+  <% end %>
+      <%= link_to flowers_nature_path do %>
+        <div class="nature">
+          <div class="ken2">
+            自然
+          </div>
+        </div>
+      <% end %>
+      <%= link_to flowers_goumet_path do %>
+      <div class="goumet">
+        <div class="ken2">
+          グルメ
+        </div>
+      </div>
+      <% end %>
+  </div>
+  <div class="niko">
+      <%= link_to flowers_nonbiri_path do %>
+        <div class="nonbiri">
+          <div class="ken2">
+          のんびり
+          </div>
+        </div>
+      <% end %>
+      <%= link_to flowers_kansyo_path do %>
+        <div class="kansyo">
+          <div class="ken2">
+          鑑賞
+          </div>
+        </div>
+    <% end %>
+  </div>
+
+</div>

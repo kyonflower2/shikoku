@@ -13,21 +13,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :feeling  %>
-    <%= f.select :feeling, 
-    [["A", "A"], 
-    ["B", "B"], 
-    ["C", "C"]], include_blank: "選択して下さい" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :category  %>
-    <%= f.select :category, 
+    <%= f.label :カテゴリー  %>
+    <%= f.select :カテゴリー, 
     [["アクティブ", "アクティブ"], 
     ["自然", "自然"], 
     ["グルメ", "グルメ"], 
-    ["ツアー", "ツアー"],
-    ["歴史", "歴史"]], include_blank: "選択して下さい" %>
+    ["鑑賞", "鑑賞"],
+    ["のんびり", "のんびり"]], include_blank: "選択して下さい" %>
   </div>
 
   <div class="field">
@@ -49,21 +41,12 @@
     <%= f.date_select :date, {discard: true} %>
   </div>
 
-  <%= f.submit "投稿する" %>
-<% end %>
-  
-<%= link_to "一覧に戻る", flowers_path %>
 
-<%= form_for @flower do |f| %>
-
-  # 画像をアップロードするフォーム
-   <span class="image-top">
+  <span class="image-top">
      <%= f.label :image_top, '画像' %>
      <%= f.file_field :image_top, accept: "image/jpeg,image/gif,image/png" %>
    </span>
  
- 
-  # バリデーションをかける前に、投稿フォームでファイルサイズを規制する。
       <script type="text/javascript">
        $("#flower_image_top, #flower_images").bind("change", function() {
          var size_in_megabytes = this.files[0].size/1024/1024;
@@ -73,9 +56,11 @@
          }
        });
       </script>
- 
-   <%= f.submit "投稿する" %>
- <% end %>
+  <%= f.submit "投稿する" %>
+<% end %>
+  
+<%= link_to "一覧に戻る", flowers_path %>
+
  
  
  

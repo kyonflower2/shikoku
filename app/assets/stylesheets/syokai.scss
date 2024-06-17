@@ -1,0 +1,189 @@
+.botan{display: block;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+		font-size: 1.5vw;
+		width: 13%;
+		height: 6%;
+		margin-top: -5%;
+		margin-left: 80%;
+		margin-bottom: 5%;
+		font-weight: bold;
+		border-radius: 0.3rem;
+		background: #fdeff2;
+		color: #606060;
+		transition: all 0.4s;
+		border: #606060 solid 1.5px;
+	}
+.botan:hover {
+	color: #f6bfbc;
+	}
+
+
+
+.allsyosaikagawa{
+	background-color: #dbb7ffa4;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosaikouchi{
+	background-color: #b7ffffcb;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosaiehime{
+	background-color: #ffdbb7b5;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosaitokushima{ 
+	background-color:#bcffbcc4;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosaigoumet{ 
+	background-color:#ffccccb5;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosaiactive{ 
+	background-color:#cce5ffb6;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosainonbiri{ 
+	background-color:#d1d1ffc1;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosainature{ 
+	background-color:#bcffddaf;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+.allsyosaikansyo{ 
+	background-color:#ffccffad;
+	height: 100%;
+	padding-top: 4vw;
+	padding-bottom: 2vw;
+}
+
+.kekkasyosai{
+	border: solid 2px #606060;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-bottom: 6vw;
+	display: flex;
+	background-color: #fffafa;
+}
+.hidari{
+	width: 33vw;
+}
+.mainphoto {
+	width: 30vw;
+	  height: 23vw;
+	  object-fit: cover;
+	  margin-left: 3%;
+	  margin-top: 5%;
+	  margin-bottom:5% ;
+  }
+  
+  .syosaikankouchimei{
+	  font-size: 3vw;
+	  text-align: center;
+  }
+  .syosaizyusyo{
+	  font-size: 1.2vw;
+	  margin-left: 3%;
+  
+  }
+.migi{
+	width: 45vw;
+}
+.migiue{
+	height: 16vw;
+	display: flex;
+	margin-left: 2vw;
+	margin-top: 3vw;
+}
+.categorysetumei{
+	width: 22vw;
+	font-size: 1.5vw;
+}
+
+.syosaikokonoko{
+	display: flex;
+	text-align: center;
+}
+.syosaiheart{
+	width: 19vw;
+	z-index: 1;
+	position: absolute;
+	margin-left: 1vw;
+}
+.syosaiheartbun{
+	z-index: 2;
+	position: absolute;
+	margin-top: 5vw;
+	margin-left: 2.5vw;
+	font-size: 1.5vw;
+	color: #333;
+}
+.dli-check-circle {
+	display: inline-block;
+	vertical-align: middle;
+	color: #333;
+	line-height: 1;
+	position: relative;
+	width: 1.35vw;
+	height: 1.35vw;
+	border: 0.15vw solid currentColor;
+	border-radius: 50%;
+	box-sizing: content-box;
+	margin-top: 0.2vw;
+  }
+  
+  .dli-check-circle > span {
+	width: 0.58em;
+	height: 0.261em;
+	border: 0.15vw solid currentColor;
+	border-top: 0;
+	border-right: 0;
+	box-sizing: border-box;
+	transform: translateY(-25%) rotate(-45deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+  }
+.migishita{
+	height: 14vw;
+	display: flex;
+}
+.syosaipoint{
+	display: flex;
+	margin-top: 2vw;
+}
+.syosaipointbun{
+	font-size: 1.3vw;
+	color: #333;
+}
+.syosaipointhidari{
+	width: 21vw;
+	margin-left: 0.5vw;
+	height: 14vw;
+}
+.syosaipointmigi{
+	margin-left: 1vw;
+	height: 14vw;
+}

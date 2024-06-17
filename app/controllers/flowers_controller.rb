@@ -34,6 +34,7 @@ class FlowersController < ApplicationController
     def nonbiri
     end
 
+
     def index
         @flowers = Flower.all
     end

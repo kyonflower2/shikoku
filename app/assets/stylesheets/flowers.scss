@@ -1,3 +1,344 @@
 // Place all the styles related to the flowers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+shiraberu2{
+	display: flex;
+	margin-bottom: 5vh;
+}
+
+.kenbetsu{
+	margin-top: 5vh;
+	font-size: 3vw;
+	margin-bottom: 10%;
+	margin-left: 20%;
+}
+.shiraberu1{
+	padding-top: 3%;
+}
+.ehimekagawa{
+	display: flex;
+	margin-left: 12vw;
+}
+
+.kouchitokushima{
+	padding-top: 1vh;
+	display: flex;
+	margin-left: 6vw;
+	margin-top: 3vh;
+}
+
+.ken{
+	vertical-align: center;
+	padding-top: 8%;
+	color: #606060;
+	font-size: 1.5vw;
+}
+.ken2{
+	vertical-align: center;
+	padding-top: 8%;
+	color: #606060;
+	font-size: 1.2vw;
+}
+
+.shiraberuphoto1 {
+	width: 35vw;
+	height: 35vw;
+	object-fit: cover;
+	margin-left: 60vw;
+	margin-top: 3vh;
+    position: absolute;
+	z-index: 1;
+    opacity: 82%;
+	border: solid 2px #606060;
+}
+.shiraberuphoto2 {
+	width: 20vw;
+	height: 20vw;
+	object-fit: cover;
+	margin-left: 53vw;
+	margin-top: 20%;
+    position: absolute;
+	z-index: 2;
+    opacity: 80%;
+	border: solid 1.5px #606060;
+}
+.shiraberuphoto3 {
+	width: 15vw;
+	height: 15vw;
+	object-fit: cover;
+	margin-left: 47vw;
+	margin-top: 12%;
+    position: absolute;
+	z-index: 3;
+    opacity: 80%;
+	border: solid 1.5px #606060;
+
+}
+
+
+.shiraberuphoto4 {
+	width: 35vw;
+	height: 35vw;
+	object-fit: cover;
+	margin-left: 5vw;
+	margin-top: 30vh;
+    position: absolute;
+	z-index: 1;
+    opacity: 82%;
+	border: solid 2px #606060;
+}
+.shiraberuphoto5 {
+	width: 20vw;
+	height: 20vw;
+	object-fit: cover;
+	margin-left: 26vw;
+	margin-top: 35%;
+    position: absolute;
+	z-index: 2;
+    opacity: 80%;
+	border: solid 1.5px #606060;
+}
+.shiraberuphoto6 {
+	width: 15vw;
+	height: 15vw;
+	object-fit: cover;
+	margin-left: 35vw;
+	margin-top: 25%;
+    position: absolute;
+	z-index: 3;
+    opacity: 100%;
+	border: solid 1.5px #606060;
+
+}
+
+.sanko{
+	display: flex;
+	margin-left: 50vw;
+}
+.niko{
+	display: flex;
+	margin-left: 60vw;
+	margin-top: 5vh;
+}
+.shiraberu3{
+	margin-bottom: 30%;
+}
+.categorybetsu{
+	margin-top: 30vh;
+	font-size: 3vw;
+	margin-bottom: 10%;
+	margin-left: 65%;
+}
+h3 {text-align: center;
+	font-size: 20px;
+}
+
+h4 {text-align: center;
+	font-size: 20px;
+}
+
+
+
+.kouchi {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 16vw;
+	height: 110%;
+	margin-right: 2vw;
+	margin-left: 1vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #b7ffff;
+	background: #ccffffc3;
+	color: #606060;
+	transition: all 0.4s;
+}
+.kouchi:hover {
+	transform: translateY(3px);
+	border-bottom: 1px solid #b7ffff;
+	color: #fff;
+  }
+
+  .ehime {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 16vw;
+	height: 110%;
+	margin-right: 2vw;
+	margin-left: -5vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #ffdbb7;
+	background: #ffe5ccc4;
+	color: #fff;
+	transition: all 0.4s;
+    
+  }
+.ehime:hover {
+    transform: translateY(3px);
+	border-bottom: 1px solid #ffdbb7;
+	color: #fff;
+  }
+
+.ehime2{
+	color: white;
+}
+
+  .kagawa {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 16vw;
+	height: 110%;
+	margin-left: 2vw;
+	margin-right: 1vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #dbb7ff;
+	background: #e5ccffbd;
+	color: #fff;
+	transition: all 0.4s;
+   
+}
+.kagawa:hover {
+    transform: translateY(3px);
+	border-bottom: 1px solid #dbb7ff;
+	color: #fff;
+  }
+
+  .tokushima {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 16vw;
+	height: 110%;
+	margin-left: 2vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #bcffbc;
+	background: #ccffccc0;
+	color: #fff;
+	transition: all 0.4s;
+    
+}
+.tokushima:hover {
+	transform: translateY(3px);
+	border-bottom: 1px solid #bcffbc;
+	color: #fff;
+  }
+
+  .active {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 12vw;
+	height: 110%;
+	margin-left: 5vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #cce5ff;
+	background: #d6eaffc1;
+	color: #fff;
+	margin-right: 4vw;
+	transition: all 0.4s;
+}
+.active:hover {
+    transform: translateY(3px);
+	border-bottom: 1px solid #cce5ff;
+	color: #fff;
+  }
+  .nonbiri {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 12vw;
+	height: 110%;
+	margin-left: 3vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #d1d1ff;
+	background: #e0e0ffc3;
+	color: #fff;
+	transition: all 0.4s;
+}
+.nonbiri:hover {
+    transform: translateY(3px);
+	border-bottom: 1px solid #d1d1ff;
+	color: #fff;
+  }
+.goumet {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 12vw;
+	height: 110%;
+	margin-left: 3vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #ffcccc;
+	background: #ffdbdbc6;
+	color: #fff;
+	transition: all 0.4s;   
+}
+.goumet:hover {
+    transform: translateY(3px);
+	border-bottom: 1px solid #ffcccc;
+	color: #fff;
+  }
+
+  .nature {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 12vw;
+	height: 110%;
+	margin-left: -1vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #bcffdd;
+	background: #ccffe5bc	;
+	color: #fff;
+	transition: all 0.4s;
+}
+.nature:hover {
+    transform: translateY(3px);
+	border-bottom: 1px solid #bcffdd;
+	color: #fff;
+  }
+
+  .kansyo {
+    display: block;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	width: 12vw;
+	height: 110%;
+	margin-left: 3.5vw;
+	font-weight: bold;
+	border-radius: 0.3rem;
+	border-bottom: 4px solid #ffccff;
+	background: #ffdbffc0;
+	color: #fff;
+	transition: all 0.4s;
+}
+.kansyo:hover {
+    transform: translateY(3px);
+	border-bottom: 1px solid #ffccff;
+	color: #fff;
+}
+
+
+
+
+

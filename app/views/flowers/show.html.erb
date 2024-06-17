@@ -1,15 +1,32 @@
-<h1>shikoku</h1>
-<h3>Flower詳細</h3>
-<div class="flower">
-  <p><%= @flower.name %></p>
-  <p><%= @flower.about%></p>
-  <p><%= @flower.feeling%></p>
-  <p><%= @flower.category%></p>
-  <p><%= @flower.Prefecture%></p>
-  <p><%= @flower.username%></p>
-  <p><%= @flower.date%></p>
-    <% if user_signed_in? %>
+<div class="kokonokokonoko">
+  <%= image_tag 'heart.jpg', class: 'kyoyu' %>
+  <div class='kyoyu1'>
+    ココノコ詳細
+  </div>
+  <%= link_to "投稿一覧に戻る", flowers_path,{class: "syosaimodoru"} %>
+</div>
 
+  <div class="flower2">
+    <% if @flower.image_top.attached? %>
+      <%= image_tag @flower.image_top, class: "photosyosai" %>
+    <% end %>
+    <div class="syosaibun">
+     <div class="syosaibun1"> 
+        <p class="syosaikankoucihime"><%= @flower.name %></p>
+        <p class="syosaidate"><%= @flower.date %></p>
+        <p class="syosaiusername"><%= @flower.username %></p>
+      </div>
+      <div class="syosaibun2">
+        <p class="syosaicategory"><%= @flower.category %></p>
+        <p class="syosaiprefecture"><%= @flower.Prefecture %></p>
+      </div>
+      <p class="syosaiabout"><%= @flower.about %></p>
+    </div>
+</div>
+ <%= link_to "編集する", edit_flower_path(@flower.id),{class: "syosaihensyu"} %>
+
+<div class="syosaiiine">
+<% if user_signed_in? %>
       <% if current_user.already_liked?(@flower) %>
         <%= link_to flower_like_path(@flower), method: :delete do %>
           <i class="fas fa-heart"></i><%= @flower.likes.count %>
@@ -20,44 +37,35 @@
           <i class="far fa-heart"></i><%= @flower.likes.count %>
         <% end %>
       <% end %>
-         
-       <i class="far fa-heart"></i><%= @flower.likes.count %>
 
     <% else %>
-      <p>いいねの数 = </p><%= @flower.likes.count %>
+      いいねの数 <%= @flower.likes.count %>
     <% end %>
-  
-</div>
 
-<div class="image-top">
-  <%= image_tag @flower.resize_image_top if @flower.image_top.attached? %>
-</div>
-
-<h2>いいねしたユーザー</h2>
+<h2>みんなからのいいね♪</h2>
 <% @flower.liked_users.each do |user| %>
-  <li><%= user.email %></li>
+  <%= user.email %>
 <% end %>
 
-<div class="comment-wrapper">
-  <p>コメント一覧</p>
-  <% @comments.each do |c| %>
-    <div>
-      <%= c.user.email unless c.user.blank? %>
-      <br>
-      <%= c.content %>
-    </div>
-      <br>
-  <% end %>
+  <div class="comment-wrapper">
+    <% @comments.each do |c| %>
+      <div>
+        <%= c.user.email unless c.user.blank? %>
+        <br>
+        <%= c.content %>
+      </div>
+        <br>
+    <% end %>
 
-  <% if user_signed_in? %>
-    <%= form_with(model: [@flower, @comment], local: true) do |f| %>
-      <%= f.text_area :content %>
-      <%= button_tag type: "submit" do %>
-        <i class="far fa-comments"></i> コメントする
+    <% if user_signed_in? %>
+      <%= form_with(model: [@flower, @comment], local: true) do |f| %>
+        <%= f.text_area :content %>
+        <%= button_tag type: "submit" do %>
+          <i class="far fa-comments"></i> コメントする
+        <% end %>
       <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
 
-<%= link_to "編集する", edit_flower_path(@flower.id) %>
-<%= link_to "Flower一覧に戻る", flowers_path %>
+

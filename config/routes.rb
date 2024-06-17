@@ -10,12 +10,21 @@ Rails.application.routes.draw do
 
   get 'perfumes/ryugado' => 'perfumes#ryugado'
   get 'perfumes/dougo' => 'perfumes#dougo'
-  get 'perfumes/matumotozyo' => 'perfumes#matumotozyo'
+  get 'perfumes/matsuyamazyo' => 'perfumes#matsuyamazyo'
   get 'perfumes/otsuka' => 'perfumes#otsuka'
   get 'perfumes/kazura' => 'perfumes#kazura'
   get 'perfumes/takaya' => 'perfumes#takaya'
   get 'perfumes/karusuto' => 'perfumes#karusuto'
   get 'perfumes/chichibu' => 'perfumes#chichibu'
+
+  get 'perfumes/ryugado1' => 'perfumes#ryugado1'
+  get 'perfumes/dougo1' => 'perfumes#dougo1'
+  get 'perfumes/matsuyamazyo1' => 'perfumes#matsuyamazyo1'
+  get 'perfumes/otsuka1' => 'perfumes#otsuka1'
+  get 'perfumes/kazura1' => 'perfumes#kazura1'
+  get 'perfumes/takaya1' => 'perfumes#takaya1'
+  get 'perfumes/karusuto1' => 'perfumes#karusuto1'
+  get 'perfumes/chichibu1' => 'perfumes#chichibu1'
 
   resources :perfumes
  resources :users, only: [:show] do

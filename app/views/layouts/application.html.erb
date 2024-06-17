@@ -5,32 +5,36 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ac26ce52cd.js" crossorigin="anonymous"></script>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <header>
-      <h1>ゆるり旅</h1>
-
+    <%= image_tag 'logo.jpg', class: 'logo' %>
       <div class="header-list">
         <ul>
           <li><%= link_to "ホーム", flowers_top_path %></li>
-          <li><%= link_to "投稿ページ",new_flower_path %></li>
+          <li><%= link_to "投稿ページ",flowers_path %></li>
           <li><%= link_to "調べる",flowers_shiraberu_path %></li>
           <li><%= link_to "診断",perfumes_path %></li>
         </ul>
       </div>
-
     </header>
-  
     <main>
       <%= yield %>
     </main>
   </body>
 </html>
+
+
+
+
+
+
+
 
 

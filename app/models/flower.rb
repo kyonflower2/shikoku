@@ -8,7 +8,7 @@ class Flower < ApplicationRecord
                                         message: "should be less than 5MB" }
                                         
     def resize_image_top
-     image_top.variant(resize_to_limit: [500, 200])
+     image_top.variant(resize_to_limit: [500,500])
     end
 
     belongs_to :user

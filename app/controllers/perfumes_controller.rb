@@ -29,7 +29,7 @@ class PerfumesController < ApplicationController
     def dougo
     end
 
-    def matumotozyo
+    def matsuyamazyo
     end
 
     def otsuka
@@ -47,6 +47,8 @@ class PerfumesController < ApplicationController
     def chichibu
     end
 
+    def matsuyamazyo1
+    end
 
     def create
         perfume = Perfume.new(perfume_params)

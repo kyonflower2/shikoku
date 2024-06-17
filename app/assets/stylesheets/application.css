@@ -22,31 +22,53 @@
     font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ",
       Meiryo, "ＭＳ Ｐゴシック", sans-serif;
   }
+  
   header {
-    background-color: #00acee;
-    height: 80px;
+    background-color: #fffafa;
+    height: 6.5vw;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    
   }
   header a {
-    color: white; 
+    color: #606060; 
     text-decoration: none; 
+  
   }
-  header h1 {
-    color: white;
-    margin-left: 20px;
+  
+  .logo{
+    height: 6.5vw;
+    margin-left: 1.5vw;
+    padding-bottom: 1vw;
   }
+
   .header-list {
     display: flex;
     align-items: center;
+    font-size: 1.35vw;
   }
   header ul {
     display: flex;
   }
+
+
   header li {
     list-style: none;
     margin-right: 40px;
   }
   
+main{
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body{
+  background-color:#fffafa	;
+}

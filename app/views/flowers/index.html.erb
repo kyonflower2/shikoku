@@ -1,48 +1,67 @@
+<div class="kokonokokonoko">
+  <%= image_tag 'heart.jpg', class: 'kyoyu' %>
+  <div class='kyoyu1'>
+    ココノコ共有
+  </div>
+  <% if user_signed_in? %>
+    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "indexlogout" %>
+    <%= link_to "新規投稿へ", new_flower_path, {class: "indexsinki"} %>
+  <% else %>
+    <%= link_to "ログイン", new_user_session_path, {class: "indexlogin"} %>
+<% end %>
 
+</div>
 
-<%= link_to "ログイン", new_user_session_path %>
-<%= link_to "新規登録", new_user_registration_path %>
-<h1>shikoku</h1>
-<h3>感想共有一覧</h3>
-<%= link_to "新規投稿へ", new_flower_path %>
-<%= button_to 'ログアウト', destroy_user_session_path, method: :delete %>
 <div class="flowers-container">
   <% @flowers.each do |t| %>
     <div class="flower">
-      <%= t.user.email %> 
-      <%= t.name %>
-      <%= t.about %>
-      <%= t.feeling %>
-      <%= t.category %>
-      <%= t.Prefecture %>
-      <%= t.username %>
-      <%= t.date %>
-      <%= link_to "詳細へ", flower_path(t.id) %> 
-      <%= link_to "編集する", edit_flower_path(t.id) %>
-      <%= button_to "削除する", flower_path(t.id), method: :delete %>
-
-      <div class="photo">
-            <%= image_tag t.resize_image_top if t.image_top.attached? %>
-            <%= t.created_at %>
-            <%= link_to "詳細へ", flower_path(t.id) %>
-            <%= link_to "編集する", edit_flower_path(t.id) %>
-            <%= button_to "削除する", flower_path(t.id), method: :delete %>
-     </div>
-
-      <% if user_signed_in? %>
-        <% if current_user.already_liked?(t) %>
-          <%= link_to flower_like_path(id: t.id, flower_id: t.id), method: :delete do %>
-            <i class="fas fa-heart"></i><%= t.likes.count %>
-          <% end %>
-        <% else %>
-          <%= link_to flower_likes_path(id: t.id, flower_id: t.id), method: :post do %>
-            <i class="far fa-heart"></i><%= t.likes.count %>
-          <% end %>
-        <% end %>
-      <% else %>
-      <i class="far fa-heart"></i><%= t.likes.count %>
+      <div class="bun">
+        <div class="kankouchimei">
+          <%= t.name %>
+        </div>
+        <div class="category">
+          <%= t.category %>
+        </div>
+        <div class="ichiranprefecture">
+          <%= t.Prefecture %>
+        </div>
+      </div>
+      <% if t.image_top.attached? %>
+        <%= image_tag t.image_top, class:"photo" %>
       <% end %>
-      
+      <div class="ichiranbun1">
+        <div class="ichiranbun2">
+          <%= link_to "詳細へ", flower_path(t.id), {class: "indexsyosai"} %>
+          <div class="username">
+            <%= t.username %>
+          </div>
+        </div>
+
+        <div class="ichiranbun3">
+          <div class="iine">
+            <% if user_signed_in? %>
+              <% if current_user.already_liked?(t) %>
+                <%= link_to flower_like_path(id: t.id, flower_id: t.id), method: :delete do %>
+                  <i class="fas fa-heart"></i><%= t.likes.count %>
+                <% end %>
+              <% else %>
+                <%= link_to flower_likes_path(id: t.id, flower_id: t.id), method: :post do %>
+                  <i class="far fa-heart"></i><%= t.likes.count %>
+                <% end %>
+              <% end %>
+            <% else %>
+              <i class="far fa-heart"></i><%= t.likes.count %>
+            <% end %>
+          </div>
+
+          <% if user_signed_in? && current_user.id == t.user_id %>
+          <%= link_to "編集する", edit_flower_path(t.id), {class: "indexhensyu"} %>
+          <%= link_to "削除する", flower_path(t.id), method: :delete, class: "indexsakuzyo" %>
+          <% end %>
+
+        </div>
+      </div>
     </div>
   <% end %>
 </div>
+
