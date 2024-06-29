@@ -1,79 +1,85 @@
 <div class="allsyosaikansyo">
-<div class="kekkasyosai">
-<div class="hidari">
-  <div class="syosaikankouchimei">
-  No1.大塚国際美術館
-  </div>
-  <div class="syosaizyusyo">
-  住所：徳島県鳴門市
-  </div>
-  <%= image_tag 'otsuka1.jpg', class: 'mainphoto' %>      
-</div>
-  <div class="migi">
-    <div class="migiue">
-        <div class="categorykoutuu">
-            <div class="categorysetumei">
-                <div class="hashtokushima">
-                ＃徳島
+              <div class="kekkasyosai">
+    <div class="hidari">
+      <div class="syosaikankouchimei">
+      No1.大塚国際美術館
+      </div>
+      <div class="syosaizyusyo">
+      住所：徳島県鳴門市
+      </div>
+      <%= image_tag 'otsuka1.jpg', class: 'mainphoto' %>      
+    </div>
+      <div class="migi">
+        <div class="migiue">
+            <div class="categorykoutuu">
+                <div class="categorysetumei">
+                    <div class="hashtokushima">
+                    ＃徳島
+                    </div>
+                    <div class="hashkansyo">
+                    ＃鑑賞
+                    </div>
+                    <div class="hashnonbiri">
+                    ＃のんびり
+                    </div>
+                    <br>
+                    ＃圧倒
+                    ＃絶景
+                    ＃異国感
+                    ＃異国の世界
                 </div>
-                <div class="hashkansyo">
-                ＃鑑賞
-                </div>
-                <div class="hashnonbiri">
-                ＃のんびり
-                </div>
+                <div class=koutuu>
+                ●車がおすすめ（駐車場有）
                 <br>
-                ＃圧倒
-                ＃絶景
-                ＃異国感
-                ＃異国の世界
+                ●JR鳴門駅からバス15分
+                <br>入館料　一般当日券　3300円
+                <br>　　　　大学生当日券　2200円
+                </div>
             </div>
-            <div class=koutuu>
-            交通手段
+          <div class="syosaikokonoko">
+            <%= image_tag 'heart.jpg', class: 'syosaiheart' %>
+            <div class="syosaiheartbun">
+            異国な空間で過ごす
+            <br>素敵な思い出に
             </div>
-        </div>
-      <div class="syosaikokonoko">
-        <%= image_tag 'heart.jpg', class: 'syosaiheart' %>
-        <div class="syosaiheartbun">
-        異国な空間で過ごす
-        <br>素敵な思い出に
-        </div>
-      </div>
-    </div>
-    <div class="migishita">
-      <div class="syosaipointhidari">
-        <div class="syosaipoint">
-          <span class="dli-check-circle"><span></span></span>
-          <div class="syosaipointbun">
-          入ると広がる異国の世界
           </div>
         </div>
-        <div class="syosaipoint">
-          <span class="dli-check-circle"><span></span></span>
-          <div class="syosaipointbun">
-          古代～現代の西洋名画1000点以上
-          </div>
-        </div>
-      </div>
-      <div class='syosaipointmigi'>
-        <div class="syosaipoint">
-          <span class="dli-check-circle"><span></span></span>
-          <div class="syosaipointbun">
-          聖堂も再現されている！
-          <br>タイムスリップした気分♪
-          </div>
-        </div>
-        <div class="syosaipoint">
-          <span class="dli-check-circle"><span></span></span>
-          <div class="syosaipointbun">
-          3時間でも足りません
+        <div class="migishita">
+          <div class="syosaipointhidari">
+            <div class="syosaipoint">
+              <span class="dli-check-circle"><span></span></span>
+              <div class="syosaipointbun">
+              入ると広がる異国の世界
+              </div>
             </div>
+            <div class="syosaipoint">
+              <span class="dli-check-circle"><span></span></span>
+              <div class="syosaipointbun">
+              古代～現代の西洋名画1000点以上
+              </div>
+            </div>
+          </div>
+          <div class='syosaipointmigi'>
+            <div class="syosaipoint">
+              <span class="dli-check-circle"><span></span></span>
+              <div class="syosaipointbun">
+              聖堂も再現されている！
+              <br>タイムスリップした気分♪
+              </div>
+            </div>
+            <div class="syosaipoint">
+              <span class="dli-check-circle"><span></span></span>
+              <div class="syosaipointbun">
+              3時間でも足りません
+                </div>
+            </div>
+          </div>
         </div>
+         <%= link_to "詳細へ", perfumes_otsuka1_path, class: "botan" %>
       </div>
-    </div>
   </div>
-</div>
-<div class="kekkasyosai">
+
+          <div class="kekkasyosai">
     <div class="hidari">
         <div class="syosaikankouchimei">
         No2.松山城
@@ -103,7 +109,9 @@
                 ＃充実
             </div>
             <div class=koutuu>
-            交通手段
+            ●車がおすすめ（駐車場有）<br>
+          ●ロープウェイ乗り場の最寄<br>
+          大街道駅から徒歩5分
             </div>
         </div>
       <div class="syosaikokonoko">
@@ -144,6 +152,7 @@
         </div>
       </div>
     </div>
+    <%= link_to "詳細へ", perfumes_matsuyamazyo1_path, class: "botan" %>
   </div>
 </div>
 
@@ -177,7 +186,7 @@
                 ＃タオルの歴史
             </div>
             <div class=koutuu>
-            交通手段
+            ●車が必須（駐車場有）
             </div>
         </div>
       <div class="syosaikokonoko">
@@ -220,3 +229,5 @@
     </div>
   </div>
 </div>
+</div>        
+

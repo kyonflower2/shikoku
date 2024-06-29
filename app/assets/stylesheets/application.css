@@ -40,6 +40,10 @@
     text-decoration: none; 
   
   }
+
+  header a:hover {
+      color:  rgba(242, 212, 248, 0.788);
+  }
   
   .logo{
     height: 6.5vw;

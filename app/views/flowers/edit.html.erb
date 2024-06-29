@@ -1,22 +1,51 @@
-<%= form_for @flower do |f| %>
-    <%= f.text_field :name, :size => 30 %>
-    <%= f.text_area :about, :size => "30x2" %>
-    <%= f.select :feeling, 
-    [["A", "A"], 
-    ["B", "B"], 
-    ["C", "C"]], include_blank: "選択して下さい" %>
-    <%= f.select :category, 
-    [["アクティブ", "アクティブ"], 
-    ["自然", "自然"], 
-    ["グルメ", "グルメ"], 
-    ["ツアー", "ツアー"],
-    ["歴史", "歴史"]], include_blank: "選択して下さい" %>
-    <%= f.select :Prefecture, 
-    [["香川県", "香川県"], 
-    ["愛媛県", "愛媛県"], 
-    ["徳島県", "徳島県"], 
-    ["高知県", "高知県"]], include_blank: "選択して下さい" %>
-    <%= f.text_field :username, :size => 30 %>
-    <%= f.date_select :date, {discard: true} %>
-    <%= f.submit "編集する" %>
-  <% end %>
+<div class="allnew">
+  <%= form_for @flower do |f| %>
+      <div class="field">
+      <%= f.label :観光地名 %>
+      <%= f.text_field :name, :size => 30 %>
+    </div>
+    <div class="field">
+      <%= f.label :感想 %>
+      <%= f.text_area :about, :size => "50x7" %>
+    </div>
+    <div class="field">
+      <%= f.label :カテゴリー %>
+      <%= f.select :category,
+        [["アクティブ", "アクティブ"],
+        ["自然", "自然"],
+        ["グルメ", "グルメ"],
+        ["鑑賞", "鑑賞"],
+        ["のんびり", "のんびり"]], include_blank: "選択して下さい" %>
+    </div>
+      <div class="field">
+      <%= f.label :県名 %>
+      <%= f.select :Prefecture,
+        [["香川県", "香川県"],
+        ["愛媛県", "愛媛県"],
+        ["徳島県", "徳島県"],
+        ["高知県", "高知県"]], include_blank: "選択して下さい" %>
+    </div>
+    <div class="field">
+      <%= f.label :ユーザー名 %>
+      <%= f.text_field :username, :size => 30 %>
+    </div>
+    <div class="field">
+      <%= f.label :行った日付 %>
+      <%= f.date_select :date, {discard: true} %>
+    </div>
+    <span class="image-top">
+      <%= f.label :image_top, '画像' %>
+      <%= f.file_field :image_top, accept: "image/jpeg,image/gif,image/png" %>
+    </span>
+    <script type="text/javascript">
+      $("#flower_image_top, #flower_images").bind("change", function() {
+        var size_in_megabytes = this.files[0].size/1024/1024;
+        if (size_in_megabytes > 5) {
+          alert("Maximum file size is 5MB. Please choose a smaller file.");
+          $("#flower_image_top").val("");
+        }
+      });
+    </script>
+    <%= f.submit "投稿する",class: "toukou" %>
+    <% end %>
+</div>

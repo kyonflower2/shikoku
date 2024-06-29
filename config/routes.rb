@@ -26,6 +26,10 @@ Rails.application.routes.draw do
   get 'perfumes/karusuto1' => 'perfumes#karusuto1'
   get 'perfumes/chichibu1' => 'perfumes#chichibu1'
 
+  get 'perfumes/katsurahama1', to: 'perfumes#katsurahama1', as: 'perfumes_katsurahama1'
+  get 'perfumes/mone1', to: 'perfumes#mone1', as: 'perfumes_mone1'
+
+
   resources :perfumes
  resources :users, only: [:show] do
  end

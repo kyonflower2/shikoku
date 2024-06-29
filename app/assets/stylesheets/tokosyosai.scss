@@ -28,32 +28,42 @@
 	margin-top: 14%;
     font-weight: bold;
     border-radius: 0.3rem;
-    background: #ccffffc3;
+    background: #fcd4f4b0;
     color: #606060;
     transition: all 0.4s;
-    border: #606060 solid 1px;
+    border: #606060 solid 1.4px;
 }
 .modoru:hover {
-    color: rgba(170, 236, 112, 0.788);
+    color: rgba(242, 212, 248, 0.788);
 }
 .syosaidate{
-    margin-left: 10vw;
+    margin-left: 3vw;
     margin-top: 2vh;
+    width: 10vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    
 }
 .syosaiusername{
-    margin-left: 10vw;
+    height: 10vw;
     margin-top: 2vh;
+    width: 10vw;
+    margin-left: 3vw;
 }
 .syosaicategory{
-    color: aqua;
+    color: #82d1d1c3;
+    width: 10vw;
 }
 .syosaiprefecture{
     color: coral;
     margin-left: 10vw;
 }
 .syosaikankoucihime{
+    height: 10vw;
     font-size: 3.5vw;
     color: #575757;
+    width: 25vw;
 }
 .syosai{margin-left: 43%;
 	margin-top: -30vh;
@@ -90,7 +100,9 @@
     margin-left: 10vw;
 }
 .syosaiabout{
-    border: #606060 solid 1px;
+    border: #606060 solid 1.4px;
+	border-radius: 0.3rem;
+    width: 40vw;
 }
 .syosaibun1{
     display: flex;
@@ -111,13 +123,13 @@
     margin-top: 2%;
     font-weight: bold;
     border-radius: 0.3rem;
-    background: #ccffffc3;
+    background: #fcd4f4b0;
     color: #606060;
     transition: all 0.4s;
-    border: #606060 solid 1px;
+    border: #606060 solid 1.4px;
 }
 .syosaihensyu:hover {
-    color: rgba(170, 236, 112, 0.788);
+    color:  rgba(242, 212, 248, 0.788);
 }
 
 

@@ -31,14 +31,14 @@
 .flower{
 	border: #606060 solid 2px;
 	width: 30%;
-	height: 10%;
+	height: 38vw;
 	text-align: center;
 	color: #606060;
     margin: 1%;
 }
 .photo{
 	width: 80%;
-	height: 50vh;
+	height: 23vw;
 	object-fit: cover;
 }
 .ichiran h1{
@@ -60,7 +60,7 @@
 	margin-left: 75%;
 	font-weight: bold;
 	border-radius: 0.3rem;
-	background: #fffafa;
+	background: #fcd4f4b0;
 	color: #606060;
 	transition: all 0.4s;
 	border: #606060 solid 1.4px;
@@ -80,13 +80,13 @@
 	margin-left: 0.2vw;
 	font-weight: bold;
 	border-radius: 0.3rem;
-	background: #ccffffc3;
+	background: #fdeff2;
 	color: #606060;
 	transition: all 0.4s;
 	border: #606060 solid 1px;
 }
 .indexsyosai:hover {
-	color: rgba(170, 236, 112, 0.788);
+	color: #f6bfbc;
   }
 
 
@@ -97,16 +97,16 @@
 	font-size: 1vw;
 	width: 19%;
 	height: 8%;
-	margin-left: 0.2vw;
+	margin-left: 1vw;
 	font-weight: bold;
 	border-radius: 0.3rem;
-	background: #ccffffc3;
+	background: #fdeff2;
 	color: #606060;
 	transition: all 0.4s;
 	border: #606060 solid 1px;
 }
 .indexhensyu:hover {
-	color: rgba(170, 236, 112, 0.788);
+	color: #f6bfbc;
   }
 
 .indexsakuzyo{display: block;
@@ -116,16 +116,16 @@
 	font-size: 1vw;
 	width: 20%;
 	height: 8%;
-	margin-left: 0.2vw;
+	margin-left: 1vw;
 	font-weight: bold;
 	border-radius: 0.3rem;
-	background: #ccffffc3;
+	background: #fdeff2;
 	color: #606060;
 	transition: all 0.4s;
 	border: #606060 solid 1px;
 }
 .indexsakuzyo:hover {
-	color: rgba(170, 236, 112, 0.788);
+	color: #f6bfbc;
   }
 
 .indexlogin{display: block;
@@ -139,7 +139,7 @@
 	margin-top: 30vh;
 	font-weight: bold;
 	border-radius: 0.3rem;
-	background: #fffafa;
+	background: #fcd4f4b0;
 	color: #606060;
 	transition: all 0.4s;
 	border: #606060 solid 1.4px;
@@ -164,7 +164,7 @@
 	margin-top: 30vh;
 	font-weight: bold;
 	border-radius: 0.3rem;
-	background: #fffafa;
+	background: #fcd4f4b0;
 	color: #606060;
 	transition: all 0.4s;
 	border: #606060 solid 1.4px;
@@ -173,16 +173,14 @@
 	color: rgba(242, 212, 248, 0.788);
 }
 
-.username{
-	text-align: center;
-}
-
 .log{
 	margin-left: 90%;
 }
 
 
-.ichiranbun1{margin-top:-5vh ;
+.ichiranbun1{
+	margin-top:-5vh ;
+	height: 17%;
 	
 }
 .ichiranbun2{
@@ -194,18 +192,18 @@
 	margin-top: 3vh;
 
 
-	
 }
 .syosai{
     margin-left: 5%;
 	
 } 
 .username{
-	margin-left: 18vw;
+	margin-left: 8vw;
 	font-size: 1.5vw;
+	width: 20vw;
 }
 .bun{
-	height: 15vh;
+	height: 17%;
 }
 .kankouchimei{
 	font-size: 2.5vw;
@@ -213,7 +211,7 @@
 .category{
 	font-size: 1.5vw;
 	margin-right: 20vw;
-	color: aqua;
+	color: #69e0e0c3;
 	height: 3vh;
 }
 
@@ -232,6 +230,6 @@ h1{
 
 .iine{
 	size: 1%;
-	padding-left: 49%;
+	padding-left: 45%;
 }
 

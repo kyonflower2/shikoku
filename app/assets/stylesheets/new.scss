@@ -2,3 +2,45 @@
     justify-content: center;
 
 }
+.allnew{
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+}
+.newmodoru{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-left: 45vw;
+    font-weight: bold;
+    font-size: 1vw;
+	border-radius: 0.3rem;
+	background: #fffafa;
+	color: #606060;
+	transition: all 0.4s;
+	border: #606060 solid 1.4px;
+    width: 7%;
+}
+.newmodoru:hover {
+	color: rgba(242, 212, 248, 0.788);
+  }
+
+  .toukou{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-left: 40vw;
+    font-weight: bold;
+	border-radius: 0.3rem;
+	background: #f8aeae;
+	color: #606060;
+    transition: all 0.4s;
+	border: #606060 solid 1.4px;
+    width: 17%;
+    height: 3vw;
+    font-size: 1.5vw;
+}
+.toukou:hover {
+	color: rgba(242, 212, 248, 0.788);
+    cursor: pointer;
+  }
